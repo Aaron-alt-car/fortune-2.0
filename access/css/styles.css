@@ -2,28 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;  /* Usar Roboto como fuente principal */
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);  /* Fondo con gradiente suave */
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
 }
 
 /* Encabezado */
 header {
-    background: linear-gradient(135deg, #007bff, #9c27b0);  /* Gradiente de azul a morado */
+    background: linear-gradient(135deg, #007bff, #9c27b0);
     color: #fff;
     padding: 50px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave para darle profundidad */
-    border-bottom: 3px solid #fff;  /* Borde decorativo en la parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #fff;
 }
 
 header h1 {
-    font-size: 2.8rem;  /* Tamaño más grande para mayor impacto */
+    font-size: 2.8rem;
     margin: 0;
     letter-spacing: 3px;
-    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
+    text-transform: uppercase;
 }
 
 .banner {
@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;  /* Centrar las opciones */
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -51,53 +51,279 @@ nav ul li a {
     border-radius: 25px;
     font-weight: 500;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para un efecto flotante */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li a:hover {
-    background-color: #9c27b0;  /* Fondo morado en hover */
+    background-color: #9c27b0;
     color: #fff;
-    border-color: #9c27b0;  /* Borde morado */
-    transform: translateY(-3px);  /* Efecto de elevación */
+    border-color: #9c27b0;
+    transform: translateY(-3px);
 }
 
+/* Estilo para botones */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    transform: translateY(-3px);
+}
+
+/* Estilo específico para el botón de Cerrar sesión */
+.cerrar-sesion {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.cerrar-sesion:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+/* Main section */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #9c27b0);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #9c27b0;
+    color: #fff;
+    border-color: #9c27b0;
+    transform: translateY(-3px);
+}
+
+/* Estilo de la sección de productos */
+.productos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.producto-card {
+    width: 280px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.producto-card .producto-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.producto-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.producto-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.producto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card:hover img {
+    opacity: 0.9;
+}
+
+/* Efecto de mini pantallita */
+.producto-card:hover .producto-info {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* 1. Importar la fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* 2. Estilo general */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* 3. Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #007bff, #9c27b0);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin-bottom: 20px;
+}
+
+/* 4. Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan */
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover de los enlaces */
+nav ul li a:hover {
+    background-color: #9c27b0;
+    color: #fff;
+    border-color: #9c27b0;
+    transform: translateY(-3px);
+}
+
+/* 5. Main content (ajustar a pantallas pequeñas) */
 main {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background: #fff;  /* Fondo blanco para el área principal */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra para darle profundidad */
-    border-radius: 8px;  /* Bordes redondeados */
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-section {
-    margin-bottom: 60px;
-}
-
-.servicio {
-    border: 2px solid #6a1b9a;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;  /* Bordes redondeados */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para profundidad */
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.servicio:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Sombra más intensa al hacer hover */
-    transform: translateY(-5px);  /* Efecto de elevación */
-}
-
-/* Footer */
+/* 6. Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-top: 3px solid #9c27b0;  /* Borde decorativo superior */
+    border-top: 3px solid #9c27b0;
 }
 
 footer a {
@@ -108,34 +334,81 @@ footer a {
 }
 
 footer a:hover {
-    color: #fff;  /* Enlaces del footer se vuelven blancos en hover */
+    color: #fff;
 }
 
-/* Animación para el header */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
+/* 7. Estilos de productos (cards) */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #9c27b0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover sobre los productos */
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 8. Medios de comunicación: Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;  /* Cambia los enlaces a una columna */
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%; /* Hacer que los productos ocupen todo el ancho en pantallas pequeñas */
+        max-width: 350px; /* Limitar el tamaño máximo */
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .productos {
+        gap: 15px; /* Reduce el espacio entre las tarjetas */
     }
 }
 
-header {
-    animation: fadeIn 1s ease-out;
-}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
 
-/* Decoración de las secciones */
-section {
-    border-left: 4px solid #9c27b0;  /* Barra decorativa a la izquierda de cada sección */
-    padding-left: 20px;
-    margin-top: 40px;
-}
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 
-/* Estilo adicional para los servicios */
-.servicio {
-    background: #f9f9f9;  /* Fondo suave para los servicios */
-    border: 2px solid #9c27b0;  /* Borde morado para resaltar */
+    .producto {
+        width: 100%;
+        max-width: 300px;
+    }
 }
