@@ -412,3 +412,113 @@ footer a:hover {
         max-width: 300px;
     }
 }
+/* Estilo de los formularios */
+form {
+    background: #fff;  /* Fondo blanco */
+    padding: 40px 50px;
+    border-radius: 15px;  /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);  /* Sombra para profundidad */
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    text-align: center;
+    animation: fadeInUp 0.6s ease-in-out;  /* Animación para mostrar el formulario */
+}
+
+/* Animación para la entrada del formulario */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de los campos de texto (inputs y selects) */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 14px 20px;  /* Más espacio interno */
+    margin: 10px 0 20px;
+    border-radius: 25px;  /* Bordes completamente circulares */
+    border: 2px solid #ddd;  /* Borde gris suave */
+    background-color: #f9f9f9;  /* Fondo suave */
+    font-size: 1.1rem;
+    transition: all 0.3s ease;  /* Transición suave en el enfoque */
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Estilo cuando los campos están en foco */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #9c27b0;  /* Borde morado en foco */
+    background-color: #fff;  /* Fondo blanco en el foco */
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.5);  /* Sombra suave morada */
+}
+
+/* Etiquetas (labels) más grandes y centradas */
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;  /* Que las etiquetas se muestren como bloques */
+    color: #333;
+}
+
+/* Botón de Submit (Inicio de sesión y registro) */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;  /* Color azul */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra para profundidad */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button[type="submit"]:hover {
+    background-color: #9c27b0;  /* Cambio a morado en hover */
+    transform: translateY(-3px);  /* Efecto de elevación */
+}
+
+/* Estilo para los enlaces de login y registro */
+a {
+    color: #007bff;  /* Color azul */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Efecto de color en los enlaces */
+a:hover {
+    color: #9c27b0;  /* Color morado al pasar el ratón */
+}
+
+/* Estilo para el pie de página (footer) */
+.form-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    margin: 0 10px;
+}
+
+/* Estilo de las imágenes de fondo */
+body {
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);  /* Fondo de página suave */
+}
